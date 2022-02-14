@@ -4,3 +4,8 @@ Para instalar execute:
 ~~~
 npm i dally-link-open
 ~~~
+
+Caso queira executar o modulo sem instalar as dependencias execute:
+~~~
+npx dally-link-open
+~~~
