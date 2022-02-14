@@ -1,0 +1,17 @@
+{
+  "name": "dally_link_open",
+  "version": "1.0.0",
+  "description": "Módulo criado para abrir link em horários específicos através do terminal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "Diogo Sant'Anna",
+  "license": "“MIT”",
+  "dependencies": {
+    "open": "^8.4.0",
+    "readline-sync": "^1.4.10"
+  }
+}
