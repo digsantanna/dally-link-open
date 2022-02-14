@@ -15,7 +15,6 @@ while (taskTime !== hour) {
   hour = hoursNow();
   if (hour === taskTime) {
     handleOpenTask(link);
-    console.log('Encerrando...');
     break;
   }
 }
