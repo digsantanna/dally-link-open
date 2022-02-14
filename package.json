@@ -1,6 +1,6 @@
 {
   "name": "dally-link-open",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Módulo criado para abrir link em horários específicos através do terminal",
   "main": "index.js",
   "scripts": {
