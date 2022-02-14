@@ -1,6 +1,6 @@
 {
   "name": "dally-link-open",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Módulo criado para abrir link em horários específicos através do terminal",
   "main": "index.js",
   "scripts": {
@@ -11,9 +11,8 @@
     "type": "git",
     "url": "https://github.com/dihsantanna/dally-link-open"
   },
-  "bin": {
-    "start": "node index.js"
-  },
+  "bin": "./index.js",
+  "files": ["getTaskLink.js", "getTaskTime.js", "handlerOpenTask.js", "hoursNow.js", "index.js", "README.md", ".gitignore"],
   "keywords": [],
   "author": "Diogo Sant'Anna",
   "license": "“MIT”",
