@@ -1,7 +1,11 @@
 const readlineSync = require('readline-sync');
 
 module.exports = () => {
-  let link = readlineSync.question('Qual link deseja que seja aberto?: ');
+  let link = readlineSync.question('Qual link deseja que seja aberto? ');
+
+  while (!link) {
+    readlineSync.question('Por favor insira o link: ');
+  }
 
   const re1 = /^https:\/\//;
   const re2 = /^http:\/\//;
