@@ -1,6 +1,10 @@
-module.exports = () => {
-  const hours = new Date().getHours();
-  const minutes = new Date().getMinutes();
+const reBuilder = (num: number): string => {
+  return `${num < 10 ? '0' + num : num}`;
+}
 
-  return `${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? '0' + minutes : minutes}`;
+export default function hoursNow(): string {
+  const hours: number = new Date().getHours();
+  const minutes: number = new Date().getMinutes();
+
+  return `${reBuilder(hours)}:${reBuilder(minutes)}`;
 };
