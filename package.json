@@ -1,11 +1,11 @@
 {
   "name": "dally-link-open",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Módulo criado para abrir link em horários específicos através do terminal",
   "main": "./index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "npx tsc && node index.js"
   },
   "repository": {
     "type": "git",
@@ -22,7 +22,8 @@
     "readline-sync": "^1.4.10"
   },
   "devDependencies": {
-    "eslint": "^8.9.0"
+    "eslint": "^8.9.0",
+    "typescript": "^4.5.5"
   },
   "preferGlobal": true
 }
