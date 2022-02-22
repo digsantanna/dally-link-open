@@ -27,3 +27,8 @@ npx dally-link-open
 ### * Agora é só aguardar e quando chegar o horário o link será aberto :smirk:;
 
 <img src="./images/04.png"/>
+
+#
+### `ATENÇÃO!!!` Caso ocorra a mensagem abaixo é só dar o `y` e ser feliz :smile:.
+
+<img src="./images/05.png"/>
