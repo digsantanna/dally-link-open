@@ -1,20 +1,18 @@
 #!/usr/bin/env node
-const handleOpenTask = require('./handlerOpenTask');
-const getTaskTime = require('./getTaskTime');
-const hoursNow = require('./hoursNow');
-const getTaskLink = require('./getTaskLink');
+import handleOpenTask from './handlerOpenTask';
+import getTaskTime from './getTaskTime';
+import hoursNow from './hoursNow';
+import getTaskLink from './getTaskLink';
 
-const taskTime = getTaskTime();
-const link = getTaskLink();
+const taskTime: string = getTaskTime();
+const link: string = getTaskLink();
 
 console.log(`O link "${link}" será aberto às "${taskTime}"`);
 
-let hour = hoursNow();
+let hour: string = hoursNow();
 
 while (taskTime !== hour) {
   hour = hoursNow();
-  if (hour === taskTime) {
-    handleOpenTask(link);
-    break;
-  }
-}
+};
+
+handleOpenTask(link);
