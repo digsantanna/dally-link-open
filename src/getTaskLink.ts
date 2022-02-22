@@ -1,14 +1,14 @@
-const readlineSync = require('readline-sync');
+import readline from 'readline-sync';
 
-module.exports = () => {
-  let link = readlineSync.question('Qual link deseja que seja aberto? ');
+export default function getTaskLink(): string {
+  let link: string = readline.question('Qual link deseja que seja aberto? ');
 
-  while (!link) {
-    readlineSync.question('Por favor insira o link: ');
+  while (!link.length) {
+    link = readline.question('Por favor insira o link: ');
   }
 
-  const re1 = /^https:\/\//;
-  const re2 = /^http:\/\//;
+  const re1: RegExp = /^https:\/\//;
+  const re2: RegExp = /^http:\/\//;
 
   if (!re1.test(link) && !re2.test(link)) link = 'https://' + link;
   
